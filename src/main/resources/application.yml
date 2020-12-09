@@ -1,0 +1,20 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /coronabook
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/coronabook?serverTimezone=UTC&useUniCode=yes&characterEncoding=UTF-8
+    username: ssafy
+    password: ssafy
+    
+mybatis:
+ type-aliases-package: com.coronabook.springboot
+ mapper-locations: mapper/**/*.xml 
